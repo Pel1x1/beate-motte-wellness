@@ -33,12 +33,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Адрес",
-      content: "Musterstraße 123, 12345 Berlin, Deutschland",
+      content: "Россия, Москва",
     },
     {
       icon: Phone,
       title: "Телефон",
-      content: "+49 (0) 123 456 789",
+      content: "+7 (123) 123 45 67",
     },
     {
       icon: Mail,
@@ -90,7 +90,7 @@ const Contact = () => {
                   id="email"
                   type="email"
                   {...register("email")}
-                  placeholder="ivan@example.com"
+                  placeholder="mail@example.com"
                   className="mt-2"
                 />
                 {errors.email && (
@@ -104,7 +104,7 @@ const Contact = () => {
                   id="phone"
                   type="tel"
                   {...register("phone")}
-                  placeholder="+49 123 456 789"
+                  placeholder="+7 (123) 456-78-90"
                   className="mt-2"
                 />
                 {errors.phone && (
@@ -173,7 +173,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map Section */}
+        {/* Map Section 
         <Card className="mt-12 p-8 shadow-soft max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
             Как нас найти
@@ -188,7 +188,7 @@ const Contact = () => {
           <p className="text-sm text-muted-foreground text-center mt-4">
             Удобная транспортная доступность. Парковка доступна рядом с входом.
           </p>
-        </Card>
+        </Card>*/}
       </div>
     </div>
   );
