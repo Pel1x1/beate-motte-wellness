@@ -9,9 +9,12 @@ const Navbar = () => {
 
   const navItems = [
     { path: "/", label: "Главная" },
-    { path: "/services", label: "Услуги" },
+    { path: "/about", label: "О методе" },
+    { path: "/history", label: "История" },
+    { path: "/apparatus", label: "Аппарат" },
+    { path: "/technique", label: "Техника" },
+    { path: "/indications", label: "Показания" },
     { path: "/pricing", label: "Цены" },
-    { path: "/news", label: "Новости" },
     { path: "/contact", label: "Контакты" },
   ];
 

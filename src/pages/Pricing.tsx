@@ -4,60 +4,14 @@ import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 
 const Pricing = () => {
-  const pricingPlans = [
-    {
-      name: "Масляная дисперсионная ванна",
-      price: "8000₽",
-      duration: "60 минут",
-      features: [
-        "Индивидуальный подбор масел",
-        "Консультация специалиста",
-        "Релаксация в специальной ванне",
-        "Рекомендации по домашнему уходу",
-      ],
-    },
-    {
-      name: "Ароматерапия",
-      price: "6000₽",
-      duration: "45 минут",
-      features: [
-        "Сеанс ароматерапии",
-        "Индивидуальный подбор композиции",
-        "Консультация специалиста",
-        "Инструкции по применению",
-      ],
-    },
-    {
-      name: "Гидротерапия",
-      price: "7000₽",
-      duration: "50 минут",
-      features: [
-        "Комплекс водных процедур",
-        "Контрастные ванны",
-        "Душ Шарко",
-        "Лечебные обертывания",
-      ],
-    },
-    {
-      name: "Комплексная программа",
-      price: "20000₽",
-      duration: "3 сеанса",
-      features: [
-        "3 процедуры на выбор",
-        "Детальная консультация",
-        "Персональный план лечения",
-        "Мониторинг результатов",
-        "10% скидка",
-      ],
-      highlighted: true,
-    },
-  ];
-
-  const additionalServices = [
-    { name: "Первичная консультация", price: "4000₽" },
-    { name: "Повторная консультация", price: "3000₽" },
-    { name: "Индивидуальная программа (10 сеансов)", price: "70000₽" },
-    { name: "Массаж с ароматическими маслами", price: "9000₽" },
+  const services = [
+    { name: "Первичная консультация", price: "1000 руб." },
+    { name: "Масляно-дисперсионная ванна", price: "7000 руб." },
+    { name: "Курс масляно-дисперсионных ванн 7 процедур", price: "скидка 15%" },
+    { name: "Курс масляно-дисперсионных ванн 10 процедур", price: "скидка 20%" },
+    { name: "Консультация гомеопата", price: "5000 руб." },
+    { name: "Повторная консультация гомеопата", price: "3000 руб." },
+    { name: "Консультация гомеопата острый случай (сопровождение 1 неделя)", price: "2500 руб." },
   ];
 
   return (
@@ -68,83 +22,39 @@ const Pricing = () => {
             Стоимость услуг
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Прозрачные цены на качественные оздоровительные процедуры
+            Информация о ценах предоставляется при записи на консультацию
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {pricingPlans.map((plan, index) => (
-            <Card 
-              key={index}
-              className={`p-6 flex flex-col ${
-                plan.highlighted 
-                  ? "border-primary shadow-medium bg-primary/5" 
-                  : "shadow-soft hover:shadow-medium"
-              } transition-all duration-300`}
-            >
-              {plan.highlighted && (
-                <div className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full self-start mb-4">
-                  Популярно
-                </div>
-              )}
-              
-              <h3 className="text-xl font-bold text-foreground mb-2">
-                {plan.name}
-              </h3>
-              
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-primary">{plan.price}</span>
-                <p className="text-sm text-muted-foreground mt-1">{plan.duration}</p>
-              </div>
-
-              <ul className="space-y-3 mb-6 flex-grow">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <Check className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <Button 
-                asChild 
-                variant={plan.highlighted ? "default" : "outline"}
-                className="w-full shadow-soft"
-              >
-                <Link to="/contact">Записаться</Link>
-              </Button>
-            </Card>
-          ))}
-        </div>
-
-        <Card className="p-8 shadow-soft mb-16">
-          <h2 className="text-2xl font-bold text-foreground mb-6">
-            Дополнительные услуги
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {additionalServices.map((service, index) => (
+        <Card className="p-8 shadow-soft mb-8">
+          <div className="grid grid-cols-1 gap-4">
+            {services.map((service, index) => (
               <div 
                 key={index}
-                className="flex justify-between items-center p-4 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors"
+                className="flex justify-between items-center p-5 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors"
               >
-                <span className="text-foreground">{service.name}</span>
-                <span className="text-lg font-semibold text-primary">{service.price}</span>
+                <span className="text-foreground text-lg">{service.name}</span>
+                <span className="text-xl font-semibold text-primary">{service.price}</span>
               </div>
             ))}
+          </div>
+          
+          <div className="mt-8 p-6 rounded-lg bg-gradient-to-br from-primary/5 to-accent/5">
+            <p className="text-muted-foreground text-center">
+              Возможна депозитная система оплаты
+            </p>
           </div>
         </Card>
 
         <Card className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 text-center shadow-soft">
           <h2 className="text-2xl font-bold text-foreground mb-4">
-            Условия оплаты
+            Записаться на консультацию
           </h2>
-          <div className="max-w-2xl mx-auto text-muted-foreground space-y-3">
-            <p>Оплата производится наличными или банковской картой после процедуры.</p>
-            <p>При покупке комплексной программы предоставляется скидка 10%.</p>
-            <p>Отмена записи возможна не позднее чем за 24 часа до начала процедуры.</p>
-          </div>
-          <Button asChild size="lg" className="mt-6 shadow-medium">
-            <Link to="/contact">Записаться на прием</Link>
+          <p className="text-muted-foreground mb-6">
+            Свяжитесь с нами для уточнения деталей и записи на прием
+          </p>
+          <Button asChild size="lg" className="shadow-medium">
+            <Link to="/contact">Связаться с нами</Link>
           </Button>
         </Card>
       </div>

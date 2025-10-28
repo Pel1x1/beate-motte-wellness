@@ -22,18 +22,33 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Услуги
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  О методе
+                </Link>
+              </li>
+              <li>
+                <Link to="/history" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  История
+                </Link>
+              </li>
+              <li>
+                <Link to="/apparatus" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Аппарат
+                </Link>
+              </li>
+              <li>
+                <Link to="/technique" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Техника
+                </Link>
+              </li>
+              <li>
+                <Link to="/indications" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Показания
                 </Link>
               </li>
               <li>
                 <Link to="/pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Цены
-                </Link>
-              </li>
-              <li>
-                <Link to="/news" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Новости
                 </Link>
               </li>
               <li>
@@ -49,15 +64,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+49 (0) 123 456 789</span>
+                <span>+7 (123) 456-78-90</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@beatemotte.de</span>
-              </div>
-              <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                <span>Musterstraße 123<br />12345 Berlin, Deutschland</span>
+                <span>info@beatemotte.ru</span>
               </div>
             </div>
           </div>

@@ -31,24 +31,14 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: MapPin,
-      title: "Адрес",
-      content: "Россия, Москва",
-    },
-    {
       icon: Phone,
       title: "Телефон",
-      content: "+7 (123) 123 45 67",
+      content: "+7 (123) 456-78-90",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@beatemotte.de",
-    },
-    {
-      icon: Clock,
-      title: "Часы работы",
-      content: "Пн-Пт: 9:00-20:00\nСб: 10:00-16:00\nВс: Выходной",
+      content: "info@beatemotte.ru",
     },
   ];
 
@@ -57,10 +47,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Свяжитесь с нами
+            Контакты
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Мы рады ответить на ваши вопросы и записать вас на прием
+            Запишитесь на консультацию через WhatsApp, Telegram или Email
           </p>
         </div>
 
