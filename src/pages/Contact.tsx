@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
+import wellnessTreatment from "@/assets/wellness-treatment.jpg";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(100),
@@ -45,7 +46,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Контакты
           </h1>
@@ -54,12 +55,28 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Hero Image */}
+        <div className="mb-12 animate-fade-in">
+          <Card className="overflow-hidden shadow-medium">
+            <img 
+              src={wellnessTreatment} 
+              alt="Wellness терапия" 
+              className="w-full h-[400px] object-cover"
+            />
+          </Card>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="p-8 shadow-medium">
-            <h2 className="text-2xl font-bold text-foreground mb-6">
-              Записаться на прием
-            </h2>
+          <Card className="p-8 shadow-medium animate-fade-in hover:shadow-soft transition-all">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-full bg-primary/10">
+                <MessageCircle className="h-6 w-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-bold text-foreground">
+                Записаться на прием
+              </h2>
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <Label htmlFor="name">Ваше имя *</Label>
@@ -122,9 +139,9 @@ const Contact = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="p-6 shadow-soft hover:shadow-medium transition-all">
+              <Card key={index} className="p-6 shadow-soft hover:shadow-medium transition-all hover-scale">
                 <div className="flex items-start gap-4">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 flex-shrink-0">
                     <info.icon className="h-6 w-6 text-primary" />
@@ -141,8 +158,9 @@ const Contact = () => {
               </Card>
             ))}
 
-            <Card className="p-6 bg-primary/5 border-primary/20 shadow-soft">
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+            <Card className="p-6 bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 shadow-soft">
+              <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Clock className="h-5 w-5 text-primary" />
                 Важная информация
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -159,6 +177,26 @@ const Contact = () => {
                   <span>Первичная консультация проводится бесплатно при записи на процедуру</span>
                 </li>
               </ul>
+            </Card>
+
+            <Card className="p-6 bg-gradient-to-br from-accent/5 to-accent/10 shadow-soft">
+              <h3 className="text-lg font-semibold text-foreground mb-3">
+                Способы связи
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Мы используем современные мессенджеры для вашего удобства:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                  WhatsApp
+                </span>
+                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                  Telegram
+                </span>
+                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                  Email
+                </span>
+              </div>
             </Card>
           </div>
         </div>
