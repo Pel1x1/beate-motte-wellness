@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -15,43 +15,43 @@ const Footer = () => {
 
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-4">Навигация</h4>
-            <ul className="space-y-2">
-              <li>
+            <ul className="columns-1 md:columns-2 gap-2 [column-fill:_balance]">
+              <li className="break-inside-avoid mb-2">
                 <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Главная
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   О методе
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/history" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   История
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/apparatus" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Аппарат
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/technique" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Техника
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/indications" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Показания
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Цены
                 </Link>
               </li>
-              <li>
+              <li className="break-inside-avoid mb-2">
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Контакты
                 </Link>
