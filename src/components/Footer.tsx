@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold text-primary mb-4">Beate Motte</h3>
+            <h3 className="text-lg font-semibold text-primary mb-4 font-accent">JungebadMoscow</h3>
             <p className="text-sm text-muted-foreground">
               Частная практика оздоровительных процедур и лечебных методик
             </p>
@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@beatemotte.ru</span>
+                <span>info@jungebadmoscow.ru</span>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Beate Motte. Все права защищены.
+            © {new Date().getFullYear()} JungebadMoscow. Все права защищены.
           </p>
         </div>
       </div>

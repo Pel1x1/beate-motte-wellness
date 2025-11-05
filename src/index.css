@@ -6,6 +6,25 @@
 All colors MUST be HSL.
 */
 
+/* Custom Fonts - Добавьте ваши файлы шрифтов в папку public/fonts/ */
+@font-face {
+  font-family: 'MainFont';
+  src: url('/fonts/main-font.woff2') format('woff2'),
+       url('/fonts/main-font.woff') format('woff');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AccentFont';
+  src: url('/fonts/accent-font.woff2') format('woff2'),
+       url('/fonts/accent-font.woff') format('woff');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 32 40% 97%;
@@ -113,6 +132,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-main;
   }
 }

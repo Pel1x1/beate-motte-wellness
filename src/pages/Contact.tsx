@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "info@beatemotte.ru",
+      content: "info@jungebadmoscow.ru",
     },
   ];
 
