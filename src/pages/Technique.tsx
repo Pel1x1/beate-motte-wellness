@@ -1,7 +1,5 @@
 import { Card } from "@/components/ui/card";
-import procedure1Image from "@/assets/bath-procedure-1.jpg";
-import procedure2Image from "@/assets/bath-procedure-2.jpg";
-import massageTherapy from "@/assets/massage-therapy.jpg";
+import brushMassageImage from "@/assets/brush-massage-procedure.jpg";
 import { Waves, Hand, Moon, Thermometer } from "lucide-react";
 
 const Technique = () => {
@@ -13,16 +11,11 @@ const Technique = () => {
             Техника проведения
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 animate-fade-in">
+          <div className="mb-12 animate-fade-in">
             <img 
-              src={procedure1Image} 
-              alt="Процедура масляно-дисперсионной ванны" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
-            />
-            <img 
-              src={procedure2Image} 
-              alt="Массаж щетками" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
+              src={brushMassageImage} 
+              alt="Массаж щетками во время масляно-дисперсионной ванны" 
+              className="w-full h-[400px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
           </div>
 
@@ -83,16 +76,6 @@ const Technique = () => {
             </Card>
           </div>
 
-          {/* Massage Image */}
-          <div className="mb-8 animate-fade-in">
-            <Card className="overflow-hidden shadow-medium">
-              <img 
-                src={massageTherapy} 
-                alt="Терапевтический массаж" 
-                className="w-full h-[400px] object-cover"
-              />
-            </Card>
-          </div>
 
           {/* Experience Description */}
           <Card className="p-8 shadow-soft mb-8 animate-fade-in bg-gradient-to-br from-secondary/30 to-secondary/50">

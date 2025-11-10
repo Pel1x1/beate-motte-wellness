@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import apparatusImage from "@/assets/jungebad-apparatus.jpg";
-import logoImage from "@/assets/jungebad-logo.jpg";
+import apparatusImage1 from "@/assets/apparatus-filled-1.jpg";
+import apparatusImage2 from "@/assets/apparatus-filled-2.jpg";
 
 const Apparatus = () => {
   return (
@@ -13,14 +13,14 @@ const Apparatus = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <img 
-              src={apparatusImage} 
-              alt="Аппарат Jungebad" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft"
+              src={apparatusImage1} 
+              alt="Аппарат Jungebad с масляной дисперсией" 
+              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
             <img 
-              src={logoImage} 
-              alt="Jungebad Logo" 
-              className="w-full h-[300px] object-contain rounded-lg shadow-soft bg-white/5"
+              src={apparatusImage2} 
+              alt="Процесс дисперсии масла в аппарате Jungebad" 
+              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
           </div>
 
