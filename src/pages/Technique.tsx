@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import brushMassageImage from "@/assets/brush-massage-procedure.jpg";
 import { Waves, Hand, Moon, Thermometer } from "lucide-react";
+import procedure1Image from "@/assets/bath.bmp";
 
 const Technique = () => {
   return (
@@ -11,11 +12,16 @@ const Technique = () => {
             Техника проведения
           </h1>
 
-          <div className="mb-12 animate-fade-in">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 animate-fade-in">
+            <img
+              src={procedure1Image} 
+              alt="Процедура масляно-дисперсионной ванны" 
+              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
+            />
             <img 
               src={brushMassageImage} 
               alt="Массаж щетками во время масляно-дисперсионной ванны" 
-              className="w-full h-[400px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
+              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
           </div>
 

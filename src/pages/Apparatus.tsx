@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import apparatusImage1 from "@/assets/apparatus-filled-1.jpg";
-import apparatusImage2 from "@/assets/apparatus-filled-2.jpg";
+import apparatusImage1 from "@/assets/apparatus-filled-1.png";
+import apparatusImage2 from "@/assets/apparatus-filled-2.png";
 
 const Apparatus = () => {
   return (
@@ -11,18 +11,21 @@ const Apparatus = () => {
             Аппарат Jungebad
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <img 
-              src={apparatusImage1} 
-              alt="Аппарат Jungebad с масляной дисперсией" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
-            />
-            <img 
-              src={apparatusImage2} 
-              alt="Процесс дисперсии масла в аппарате Jungebad" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-12">
+              <img 
+                src={apparatusImage1} 
+                alt="Аппарат Jungebad с масляной дисперсией" 
+                className="w-full h-[250px] sm:h-[650px] bg-gray-100 rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale overflow-hidden"
+              />
+              <img 
+                src={apparatusImage2} 
+                alt="Процесс дисперсии масла в аппарате Jungebad" 
+                className="w-full h-[250px] sm:h-[650px] bg-gray-100 rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale overflow-hidden"
+              />
           </div>
+
+
+
 
           <Card className="p-8 shadow-soft mb-8">
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
