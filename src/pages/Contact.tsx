@@ -24,11 +24,45 @@ const Contact = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    console.log("Form data:", data);
-    toast.success("Сообщение отправлено! Мы свяжемся с вами в ближайшее время.");
+  const onSubmit = async (data: ContactFormData) => {
+  const TELEGRAM_BOT_TOKEN = '8580465462:AAHGumG12ubCoK89hb9lsFTr-zM5tS-c6cM';
+  const TELEGRAM_CHAT_ID = '827776829';
+
+  const text = `
+Новое сообщение с сайта:
+
+Имя: ${data.name}
+Email: ${data.email}
+Телефон: ${data.phone}
+Сообщение:
+${data.message}
+  `;
+
+  try {
+    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text,
+      }),
+    });
+
+    const resData = await response.json();
+
+    if (!resData.ok) {
+      throw new Error(resData.description || 'Ошибка отправки');
+    }
+
+    toast.success('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
     reset();
-  };
+  } catch (error) {
+    toast.error('Ошибка при отправке сообщения. Попробуйте позже.');
+    console.error(error);
+  }
+};
 
   const contactInfo = [
     /*{
