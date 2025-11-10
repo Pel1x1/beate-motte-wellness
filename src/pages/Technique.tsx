@@ -31,7 +31,7 @@ const Technique = () => {
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p className="text-xl font-semibold text-foreground">
                 Специалист по масляно-дисперсионной ванне тщательно подбирает масла, полученные из лекарственных 
-                растений, учитывая потребности и состояние здоровья человека.
+                растений, учитывая потребности и состояние здоровья человека
               </p>
 
               <p className="text-2xl font-bold text-foreground mt-8 mb-6">
@@ -47,7 +47,7 @@ const Technique = () => {
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <Moon className="h-10 w-10 text-primary" />
+                <Waves className="h-10 w-10 text-primary" />
                 <h3 className="text-xl font-bold text-foreground">Фаза покоя</h3>
                 <p className="text-sm text-muted-foreground">
                   Умолкание всех чувств организма. Состояние нового начала
@@ -73,7 +73,8 @@ const Technique = () => {
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <Waves className="h-10 w-10 text-primary" />
+                <Moon className="h-10 w-10 text-primary" />
+
                 <h3 className="text-xl font-bold text-foreground">Фаза покоя</h3>
                 <p className="text-sm text-muted-foreground">
                   Глубокое расслабление, внутреннее тепло и пробуждение жизненных импульсов
@@ -131,13 +132,13 @@ const Technique = () => {
               <p>
                 Поскольку кожа впитывает капли масла транскутанно, теплоаккумулирующий эффект масляной ванны 
                 сохраняется в течение нескольких часов после принятия ванны, в отличие от обычной ванны, где более 
-                высокая температура кожи достигается лишь на короткое время.
+                высокая температура тела достигается лишь на короткое время.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-card">
                   <h4 className="font-semibold text-foreground mb-2">Обычная ванна</h4>
-                  <p className="text-sm">Кратковременное повышение температуры кожи</p>
+                  <p className="text-sm">Кратковременное повышение температуры тела</p>
                 </div>
                 <div className="p-4 rounded-lg bg-primary/10 border-2 border-primary">
                   <h4 className="font-semibold text-foreground mb-2">Масляная ванна</h4>

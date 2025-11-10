@@ -97,7 +97,7 @@ const About = () => {
             <img 
               src={wellnessTreatment} 
               alt="Wellness терапия" 
-              className="w-full h-[400px] object-cover"
+              className="w-full h-[400px] scale-[1.03]  object-cover"
             />
             <div className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
               <h2 className="text-2xl font-bold text-foreground mb-4">

@@ -21,7 +21,7 @@ const Home = () => {
               Масляно-дисперсионная ванна Jungebad
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Тепло тела – основа гармоничного отношения к жизни, сильного иммунитета, гармоничного эмоционального равновесия
+              Тепло тела – основа гармоничного отношения к жизни, сильного иммунитета, эмоционального равновесия
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="shadow-medium hover:shadow-soft transition-all">

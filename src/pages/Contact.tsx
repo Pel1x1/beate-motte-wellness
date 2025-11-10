@@ -31,11 +31,11 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
+    /*{
       icon: Phone,
       title: "Телефон",
       content: "+7 (123) 456-78-90",
-    },
+    },*/
     {
       icon: Mail,
       title: "Email",
@@ -187,16 +187,30 @@ const Contact = () => {
                 Мы используем современные мессенджеры для вашего удобства:
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                {/*<a
+                  href="https://wa.me/your_number" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border hover:bg-primary hover:text-white transition-colors"
+                >
                   WhatsApp
-                </span>
-                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                </a>*/}
+                <a
+                  href="https://t.me/your_username"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border hover:bg-primary hover:text-white transition-colors"
+                >
                   Telegram
-                </span>
-                <span className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border">
+                </a>
+                <a
+                  href="mailto:info@jungebadmoscow.ru"
+                  className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border hover:bg-primary hover:text-white transition-colors"
+                >
                   Email
-                </span>
+                </a>
               </div>
+
             </Card>
           </div>
         </div>
