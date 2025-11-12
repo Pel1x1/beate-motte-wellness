@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Plane } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -72,6 +72,10 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary" />
                 <span>info@jungebadmoscow.ru</span>
               </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Plane className="h-4 w-4 text-primary" />
+                <span>@romashka2083</span>
+              </div>
             </div>
           </div>
           
@@ -82,7 +86,7 @@ const Footer = () => {
             © {new Date().getFullYear()} JungebadMoscow. Все права защищены.
           </p>
           <br></br>
-          <a href="https://pel1x1.ru"  className="text-[1rem] text-black hover:underline hover-underline">Made by K<span className="text-[0.75rem]">&</span>K</a>
+          <a href="https://pel1x1.ru"  className="text-[1rem] text-black hover:underline hover-underline font-base">Made by K<span className="text-[0.75rem]">&</span>K</a>
         </div>
       </div>
     </footer>

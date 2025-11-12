@@ -85,7 +85,7 @@ ${data.message}
             Контакты
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Запишитесь на консультацию через WhatsApp, Telegram или Email
+            Запишитесь на консультацию через Telegram или Email
           </p>
         </div>
 
@@ -230,7 +230,7 @@ ${data.message}
                   WhatsApp
                 </a>*/}
                 <a
-                  href="https://t.me/your_username"
+                  href="https://t.me/romashka2083"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border hover:bg-primary hover:text-white transition-colors"
