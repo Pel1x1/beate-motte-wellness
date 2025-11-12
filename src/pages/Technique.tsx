@@ -8,21 +8,22 @@ const Technique = () => {
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in font-accent">
             Техника проведения
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 animate-fade-in">
-            <img
-              src={procedure1Image} 
-              alt="Процедура масляно-дисперсионной ванны" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
-            />
             <img 
               src={brushMassageImage} 
               alt="Массаж щетками во время масляно-дисперсионной ванны" 
               className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
+            <img
+              src={procedure1Image} 
+              alt="Процедура масляно-дисперсионной ванны" 
+              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
+            />
+
           </div>
 
           {/* Introduction Card */}

@@ -9,22 +9,18 @@ const About = () => {
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in font-accent">
             О масляно-дисперсионной ванне по Вернеру Юнге
           </h1>
 
           {/* Hero Image Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-12">
             <img 
               src={therapyImage} 
               alt="Масляно-дисперсионная ванна" 
               className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
-            <img 
-              src={oilBathRelaxation} 
-              alt="Релаксация и терапия" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
-            />
+
           </div>
 
           {/* Main Content Card */}

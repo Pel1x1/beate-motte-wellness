@@ -10,7 +10,7 @@ import History from "./pages/History";
 import Apparatus from "./pages/Apparatus";
 import Technique from "./pages/Technique";
 import Indications from "./pages/Indications";
-import Pricing from "./pages/Pricing";
+import Pricing from "./pages/Pricing1";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 

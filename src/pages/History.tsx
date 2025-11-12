@@ -7,7 +7,7 @@ const History = () => {
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in font-accent">
             История создания метода
           </h1>
 
@@ -117,7 +117,7 @@ const History = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
                 <div className="p-4 rounded-lg bg-card text-center">
-                  <p className="text-3xl font-bold text-primary mb-2">1-я</p>
+                  <p className="text-3xl font-bold text-primary mb-2">1</p>
                   <p className="text-sm">ванна — первое облегчение</p>
                 </div>
                 <div className="p-4 rounded-lg bg-card text-center">

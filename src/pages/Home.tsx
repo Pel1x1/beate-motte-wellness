@@ -17,7 +17,7 @@ const Home = () => {
         
         <div className="relative container mx-auto px-4 text-center md:text-left">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight font-accent">
               Масляно-дисперсионная ванна Jungebad
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
