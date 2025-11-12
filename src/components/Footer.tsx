@@ -74,12 +74,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} JungebadMoscow. Все права защищены.
           </p>
+          <br></br>
+          <a href="https://pel1x1.ru"  className="text-[1rem] text-black hover:underline hover-underline">Made by K<span className="text-[0.75rem]">&</span>K</a>
         </div>
       </div>
     </footer>
