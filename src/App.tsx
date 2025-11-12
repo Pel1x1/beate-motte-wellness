@@ -10,7 +10,7 @@ import History from "./pages/History";
 import Apparatus from "./pages/Apparatus";
 import Technique from "./pages/Technique";
 import Indications from "./pages/Indications";
-import Pricing from "./pages/Pricing1";
+import Pricing from "./components/ui/Pricing1";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -30,7 +30,6 @@ const App = () => (
             <Route path="/apparatus" element={<Apparatus />} />
             <Route path="/technique" element={<Technique />} />
             <Route path="/indications" element={<Indications />} />
-            <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

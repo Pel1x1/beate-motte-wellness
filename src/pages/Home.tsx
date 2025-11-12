@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/oil-dispersion-intro.png";
+import heroImage from "@/assets/oil-dispersion-intro.webp";
 import { ArrowRight } from "lucide-react";
 
 const Home = () => {

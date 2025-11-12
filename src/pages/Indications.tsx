@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Check, X, Activity, Brain, Heart } from "lucide-react";
-import spaRelaxation from "@/assets/spa-relaxation.jpg";
+import spaRelaxation from "@/assets/spa-relaxation.webp";
 
 const Indications = () => {
   const indications = [

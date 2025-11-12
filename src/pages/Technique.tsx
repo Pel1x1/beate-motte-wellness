@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
-import brushMassageImage from "@/assets/brush-massage-procedure.jpg";
+import brushMassageImage from "@/assets/brush-massage-procedure.webp";
 import { Waves, Hand, Moon, Thermometer } from "lucide-react";
-import procedure1Image from "@/assets/bath.bmp";
+import procedure1Image from "@/assets/bath.webp";
 
 const Technique = () => {
   return (

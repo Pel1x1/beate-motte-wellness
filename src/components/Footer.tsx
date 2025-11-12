@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-primary mb-4 font-accent">JungebadMoscow</h3>
-            <p className="text-sm text-muted-foreground">
+            {/*<p className="text-sm text-muted-foreground">
               Частная практика оздоровительных процедур и лечебных методик
-            </p>
+            </p>*/}
           </div>
 
           <div>
