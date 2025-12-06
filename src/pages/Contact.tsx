@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
-import wellnessTreatment from "@/assets/wellness-treatment.webp";
+import wellnessTreatment from "@/assets/wellness-treatment1.jpg";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(100),
@@ -79,7 +79,7 @@ ${data.message}
 
   return (
     <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-accent">
             Контакты
@@ -93,9 +93,9 @@ ${data.message}
         <div className="mb-12 animate-fade-in">
           <Card className="overflow-hidden shadow-medium">
             <img 
-              src={wellnessTreatment} 
-              alt="Wellness терапия" 
-              className="w-full h-[400px] object-cover"
+            src={wellnessTreatment} 
+            alt="Wellness терапия" 
+            className="w-full h-[400px] object-cover"
             />
           </Card>
         </div>
@@ -230,7 +230,7 @@ ${data.message}
                   WhatsApp
                 </a>*/}
                 <a
-                  href="https://t.me/romashka2083"
+                  href="https://t.me/RomanovaOAl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-1 rounded-full bg-card text-sm text-foreground border border-border hover:bg-primary hover:text-white transition-colors"

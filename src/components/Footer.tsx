@@ -70,11 +70,11 @@ const Footer = () => {
               </div>*/}
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@jungebadmoscow.ru</span>
+                <a href="mailto:info@jungebadmoscow.ru" className="hover:underline">info@jungebadmoscow.ru</a>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Plane className="h-4 w-4 text-primary" />
-                <span>@romashka2083</span>
+                <a href="https://t.me/jungebadmoscow" className="hover:underline">@jungebadmoscow</a>
               </div>
             </div>
           </div>

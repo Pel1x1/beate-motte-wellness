@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import therapyImage from "@/assets/therapy-room.jpg";
-import wellnessTreatment from "@/assets/wellness-treatment.webp";
-import oilBathRelaxation from "@/assets/oil-bath-relaxation.webp";
+import wellnessTreatment from "@/assets/wellness-treatment1.jpg";
 import { Droplets, Heart, Users } from "lucide-react";
 
 const About = () => {
@@ -18,7 +17,7 @@ const About = () => {
             <img 
               src={therapyImage} 
               alt="Масляно-дисперсионная ванна" 
-              className="w-full h-[300px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
+              className="w-full h-[200px] lg:h-[500px] object-cover rounded-lg shadow-soft hover:shadow-medium transition-all hover-scale"
             />
 
           </div>
@@ -32,7 +31,7 @@ const About = () => {
               </p>
 
               <p>
-                Ваннам, компрессам и втираниям присуще то общее, что в человеческий организм наружно, 
+                Ваннам, ритмическому массажу, ритмическим втираниям и компрессам присуще то общее, что в человеческий организм наружно, 
                 через кожу, вводится определенная субстанция в соединении с субстратом-носителем, 
                 например с водой или маслом при различных температурах. Особенность здесь в том, 
                 что это введение предпринимается не самим больным, а вторым лицом, которое тем самым 
@@ -58,7 +57,7 @@ const About = () => {
                 </div>
                 <h3 className="text-lg font-bold text-foreground">Глубокое воздействие</h3>
                 <p className="text-sm text-muted-foreground">
-                  Масла проникают через кожу, достигая глубоких слоев и обеспечивая терапевтический эффект
+                  Масло проникает через кожу в кровоток и обеспечивает терапевтический эффект
                 </p>
               </div>
             </Card>
@@ -75,14 +74,14 @@ const About = () => {
               </div>
             </Card>
 
-            <Card className="p-6 shadow-soft hover:shadow-medium transition-all animate-fade-in bg-gradient-to-br from-secondary/30 to-secondary/50">
+            <Card className="p-6 shadow-soft hover:shadow-medium transition-all animate-fade-in bg-gradient-to-br from-primary/5 to-primary/10">
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-4 rounded-full bg-primary/10">
                   <Users className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground">Индивидуальный подход</h3>
                 <p className="text-sm text-muted-foreground">
-                  Персональный подбор масел и сопровождение специалиста на каждом этапе
+                  Персональный подбор масла и душевное сопровождение
                 </p>
               </div>
             </Card>
