@@ -1,0 +1,46 @@
+
+
+  <!DOCTYPE html>
+    <html lang="de" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <style>
+      body{
+        font-family: Arial, sans-serif;
+        background: white;
+        color: black;
+        padding: 2rem;
+      }
+
+      .error{
+        background: white;
+        padding: 1em;
+      }
+
+      a{
+        color: inherit;
+      }
+
+      footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+      }
+
+      </style>
+      <meta http-equiv="refresh" content="5; url=http://www.jungebad.de" />
+    </head>
+    <body>
+      <main>
+        <h1>BLACKLIST</h1>
+        <p>Hello 34.12.69.0<br>Your last request was blocked by our security system due to:</p>
+        <div class="error">KNOWN SUSPICIOUS REQUESTS</div>
+        <p>Please go back to <a href="http://www.jungebad.de">www.jungebad.de</a></p>
+      </main>
+      <footer>
+        <p><a href="https://no-tins.com/impressum">Legal</a> | <a href="https://no-tins.com/datenschutz">Data Protection</a></p>
+      </footer>
+    </body>
+  </html>

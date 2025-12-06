@@ -14,7 +14,7 @@ const Navbar = () => {
     { path: "/apparatus", label: "Аппарат" },
     { path: "/technique", label: "Техника" },
     { path: "/indications", label: "Показания" },
-    //{ path: "/pricing", label: "Цены" },
+    { path: "/oils", label: "Масла" },
     { path: "/contact", label: "Контакты" },
   ];
 
