@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Check, X, Activity, Brain, Heart } from "lucide-react";
-import spaRelaxation from "@/assets/spa-relaxation.webp";
+import spaRelaxation from "@/assets/spa-relaxation.png";
 
 const Indications = () => {
   const indications = [
@@ -38,7 +38,7 @@ const Indications = () => {
               <img 
                 src={spaRelaxation} 
                 alt="Spa релаксация и терапия" 
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[500px] object-cover"
               />
             </Card>
           </div>

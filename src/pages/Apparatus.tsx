@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import apparatusImage1 from "@/assets/apparatus-filled-1.jpg";
+import apparatusImage1 from "@/assets/apparatus-filled-1.webp";
 import apparatusImage2 from "@/assets/apparatus-filled-2.webp";
 
 const Apparatus = () => {

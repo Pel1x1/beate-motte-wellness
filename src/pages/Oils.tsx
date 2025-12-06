@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Droplet, Sun, Heart } from "lucide-react";
-import roseOil from "@/assets/rose-oil.png";
-import yellowFlowersOil from "@/assets/yellow-flowers-oil.png";
+import roseOil from "@/assets/rose-oil.webp";
+import yellowFlowersOil from "@/assets/yellow-flowers-oil.webp";
 
 const Oils = () => {
   return (

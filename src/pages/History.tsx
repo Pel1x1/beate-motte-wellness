@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Lightbulb, Droplets } from "lucide-react";
-import rudolfSteiner from "@/assets/rudolf-steiner.png";
-import wernerJunge from "@/assets/werner-junge.png";
+import rudolfSteiner from "@/assets/rudolf-steiner.webp";
+import wernerJunge from "@/assets/werner-junge.webp";
 
 const History = () => {
   return (

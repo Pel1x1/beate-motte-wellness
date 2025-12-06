@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import therapyImage from "@/assets/therapy-room.jpg";
-import wellnessTreatment from "@/assets/wellness-treatment1.jpg";
+import therapyImage from "@/assets/therapy-room.webp";
+import wellnessTreatment from "@/assets/wellness-treatment1.webp";
 import { Droplets, Heart, Users } from "lucide-react";
 
 const About = () => {

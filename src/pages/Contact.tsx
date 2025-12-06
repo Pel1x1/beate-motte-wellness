@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
-import wellnessTreatment from "@/assets/wellness-treatment1.jpg";
+import wellnessTreatment from "@/assets/wellness-treatment1.webp";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(100),
