@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Lightbulb, Droplets } from "lucide-react";
-import rudolfSteiner from "@/assets/rudolf-steiner.jpg";
-import wernerJunge from "@/assets/werner-junge.jpg";
+import rudolfSteiner from "@/assets/rudolf-steiner.png";
+import wernerJunge from "@/assets/werner-junge.png";
 
 const History = () => {
   return (
@@ -52,7 +52,7 @@ const History = () => {
                 <img 
                   src={rudolfSteiner} 
                   alt="Рудольф Штейнер" 
-                  className="w-full h-[350px] object-cover object-top hover:scale-105 transition-transform duration-500"
+                  className="w-full h-[350px] object-contain object-top hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Рудольф Штейнер</h3>

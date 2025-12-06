@@ -25,7 +25,7 @@ const Oils = () => {
           {/* First Image */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src={roseOil} 
+              src={yellowFlowersOil} 
               alt="Роза - источник эфирных масел" 
               className="w-full h-[300px] object-cover rounded-lg shadow-medium"
             />
@@ -85,7 +85,7 @@ const Oils = () => {
           {/* Second Image */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src={yellowFlowersOil} 
+              src={roseOil} 
               alt="Зверобой - лекарственное растение для масел" 
               className="w-full h-[300px] object-cover rounded-lg shadow-medium"
             />
