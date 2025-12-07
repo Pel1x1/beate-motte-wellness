@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import therapyImage from "@/assets/therapy-room.webp";
+import therapyImage from "@/assets/Jungebad-Apparat.jpg";
 import wellnessTreatment from "@/assets/wellness-treatment1.webp";
 import { Droplets, Heart, Users } from "lucide-react";
 
