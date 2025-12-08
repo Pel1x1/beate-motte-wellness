@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Plane className="h-4 w-4 text-primary" />
-                <a href="https://t.me/jungebadmoscow" className="hover:underline">@jungebadmoscow</a>
+                <a href="https://t.me/RomanovaOAl" className="hover:underline">RomanovaOAl</a>
               </div>
             </div>
           </div>
