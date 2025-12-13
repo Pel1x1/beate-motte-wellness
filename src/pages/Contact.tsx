@@ -25,8 +25,8 @@ const Contact = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-  const TELEGRAM_BOT_TOKEN = '8580465462:AAHGumG12ubCoK89hb9lsFTr-zM5tS-c6cM';
-  const TELEGRAM_CHAT_ID = '827776829';
+  const TELEGRAM_BOT_TOKEN = '';
+  const TELEGRAM_CHAT_ID = '';
 
   const text = `
 Новое сообщение с сайта:
