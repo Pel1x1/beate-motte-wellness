@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Link } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
 import wellnessTreatment from "@/assets/wellness-treatment1.webp";
+import { Link as Link1} from "react-router-dom";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Имя должно содержать минимум 2 символа").max(100),
@@ -169,6 +170,16 @@ ${data.message}
               <Button type="submit" className="w-full shadow-medium" size="lg">
                 Отправить заявку
               </Button>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомлены с {" "}
+                <Link1
+                  to="/privacy"
+                  className="underline underline-offset-2 hover:text-primary text-xs"
+                >
+                  Политикой обработки персональных данных
+                </Link1>
+                {" "}и даёте согласие на их обработку в целях записи на приём и получения консультации.
+              </p>
             </form>
           </Card>
 
