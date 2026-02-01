@@ -52,12 +52,13 @@ const Footer = () => {
                   Цены
                 </Link>
               </li>
-              */}
+              
               <li className="break-inside-avoid mb-2">
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Контакты
                 </Link>
               </li>
+              */}
               <li className="break-inside-avoid mb-2">
                 <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Политика обработки персональных данных

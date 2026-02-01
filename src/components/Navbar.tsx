@@ -15,7 +15,6 @@ const Navbar = () => {
     { path: "/technique", label: "Техника" },
     { path: "/indications", label: "Показания" },
     { path: "/oils", label: "Масла" },
-    { path: "/contact", label: "Контакты" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
