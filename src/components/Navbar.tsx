@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-semibold text-primary hover:text-primary-glow transition-colors font-accent">
-            JungebadMoscow
+            ЮнгебадМосква
           </Link>
 
           {/* Desktop Navigation */}

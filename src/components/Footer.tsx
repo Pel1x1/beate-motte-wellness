@@ -73,15 +73,17 @@ const Footer = () => {
               {/*<div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+7 (123) 456-78-90</span>
-              </div>*/}
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4 text-primary" />
-                <a href="mailto:info@jungebadmoscow.ru" className="hover:underline">info@jungebadmoscow.ru</a>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Plane className="h-4 w-4 text-primary" />
                 <a href="https://t.me/RomanovaOAl" className="hover:underline">RomanovaOAl</a>
               </div>
+              */}
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Mail className="h-4 w-4 text-primary" />
+                <a href="mailto:info@jungebadmoscow.ru" className="hover:underline">info@jungebadmoscow.ru</a>
+              </div>
+              
             </div>
           </div>
           
