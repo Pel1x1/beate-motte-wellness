@@ -58,19 +58,21 @@ const Footer = () => {
                   Контакты
                 </Link>
               </li>
-              */}
+              
               <li className="break-inside-avoid mb-2">
                 <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Политика обработки персональных данных
                 </Link>
               </li>
+              */}
             </ul>
           </div>
 
           <div>
+            {/*
             <h4 className="text-sm font-semibold text-foreground mb-4">Контакты</h4>
             <div className="space-y-3">
-              {/*<div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+7 (123) 456-78-90</span>
               </div>
@@ -78,13 +80,14 @@ const Footer = () => {
                 <Plane className="h-4 w-4 text-primary" />
                 <a href="https://t.me/RomanovaOAl" className="hover:underline">RomanovaOAl</a>
               </div>
-              */}
+             
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
                 <a href="mailto:info@jungebadmoscow.ru" className="hover:underline">info@jungebadmoscow.ru</a>
               </div>
-              
+               
             </div>
+            */}
           </div>
           
         </div>
@@ -94,7 +97,7 @@ const Footer = () => {
             © {new Date().getFullYear()} JungebadMoscow. Все права защищены.
           </p>
           <br></br>
-          <a href="https://pel1x1.ru"  className="text-[1rem] text-black hover:underline hover-underline font-base">Made by K<span className="text-[0.75rem]">&</span>K</a>
+          <a href="https://pel1x1.vercel.app/"  className="text-[1rem] text-black hover:underline hover-underline font-base">Made by K<span className="text-[0.75rem]">&</span>K</a>
         </div>
       </div>
     </footer>

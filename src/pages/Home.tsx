@@ -30,9 +30,9 @@ const Home = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="shadow-soft">
+              {/*<Button asChild variant="outline" size="lg" className="shadow-soft">
                 <Link to="/contact">Записаться на прием</Link>
-              </Button>
+              </Button>*/}
             </div>
           </div>
         </div>
